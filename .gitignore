@@ -1,0 +1,15 @@
+# xcode noise
+DerivedData
+xcuserdata
+project.xcworkspace
+build/*
+
+# osx noise
+.DS_Store
+
+# appcode
+.idea/*
+
+#localization xibs
+Poker/en.lproj/xibstrings/*.strings_patch
+Poker/ru.lproj/*.xib

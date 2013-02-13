@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEB597F616CA81250095F465 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB597F516CA81250095F465 /* UIKit.framework */; };
+		DEB597F816CA81250095F465 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB597F716CA81250095F465 /* Foundation.framework */; };
+		DEB597FA16CA81250095F465 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEB597F916CA81250095F465 /* CoreGraphics.framework */; };
+		DEB5980016CA81250095F465 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEB597FE16CA81250095F465 /* InfoPlist.strings */; };
+		DEB5980216CA81250095F465 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB5980116CA81250095F465 /* main.m */; };
+		DEB5980616CA81250095F465 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB5980516CA81250095F465 /* AppDelegate.m */; };
+		DEB5980816CA81250095F465 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DEB5980716CA81250095F465 /* Default.png */; };
+		DEB5980A16CA81250095F465 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEB5980916CA81250095F465 /* Default@2x.png */; };
+		DEB5980C16CA81250095F465 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEB5980B16CA81250095F465 /* Default-568h@2x.png */; };
+		DEF77015301EEDF394287AED /* AnyAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF77AAAF83B498A85896161 /* AnyAuthViewController.m */; };
+		DEF770C133ACE74977717E66 /* Multipart.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF77781F9008E9EB33F935D /* Multipart.m */; };
+		DEF7794238B0E91F537661A3 /* VkontakteAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF77ED9ADEA54B696B93B24 /* VkontakteAuthHandler.m */; };
+		DEF77A5EBBF4B5B5FD90A48F /* FacebookAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF775E852CEE627BE19D7C9 /* FacebookAuthHandler.m */; };
+		DEF77EBBCAD92CDE4E994FDE /* WebParams.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF7702258555B42D55F4B5C /* WebParams.m */; };
+		DEF77F3D37CD1FC6A29C9AA9 /* FileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF77479B0D87AAB493EEC91 /* FileUpload.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DEB597F216CA81250095F465 /* AnyAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnyAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB597F516CA81250095F465 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DEB597F716CA81250095F465 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DEB597F916CA81250095F465 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DEB597FD16CA81250095F465 /* AnyAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnyAuth-Info.plist"; sourceTree = "<group>"; };
+		DEB597FF16CA81250095F465 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DEB5980116CA81250095F465 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEB5980316CA81250095F465 /* AnyAuth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnyAuth-Prefix.pch"; sourceTree = "<group>"; };
+		DEB5980416CA81250095F465 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DEB5980516CA81250095F465 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DEB5980716CA81250095F465 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DEB5980916CA81250095F465 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DEB5980B16CA81250095F465 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DEF7702258555B42D55F4B5C /* WebParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebParams.m; sourceTree = "<group>"; };
+		DEF77154E2B55B6911340FA7 /* FileUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUpload.h; sourceTree = "<group>"; };
+		DEF77479B0D87AAB493EEC91 /* FileUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUpload.m; sourceTree = "<group>"; };
+		DEF774FDFA3A84F48A041A96 /* AnyAuthControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnyAuthControllerProtocol.h; sourceTree = "<group>"; };
+		DEF775E852CEE627BE19D7C9 /* FacebookAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookAuthHandler.m; sourceTree = "<group>"; };
+		DEF776FA2065D7D99307C314 /* VkontakteAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VkontakteAuthHandler.h; sourceTree = "<group>"; };
+		DEF77781F9008E9EB33F935D /* Multipart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Multipart.m; sourceTree = "<group>"; };
+		DEF778FFCA836224E8A753D5 /* AnyAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnyAuthViewController.h; sourceTree = "<group>"; };
+		DEF77AAAF83B498A85896161 /* AnyAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyAuthViewController.m; sourceTree = "<group>"; };
+		DEF77BB1473DCC72A1F10554 /* WebParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebParams.h; sourceTree = "<group>"; };
+		DEF77C1D1E5FB16E661A7D31 /* Multipart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Multipart.h; sourceTree = "<group>"; };
+		DEF77C4B506C141B560A4F04 /* AnyAuthHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnyAuthHandlerProtocol.h; sourceTree = "<group>"; };
+		DEF77E65EECAB69E0AAAF1C5 /* FacebookAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookAuthHandler.h; sourceTree = "<group>"; };
+		DEF77ED9ADEA54B696B93B24 /* VkontakteAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VkontakteAuthHandler.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEB597EF16CA81250095F465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB597F616CA81250095F465 /* UIKit.framework in Frameworks */,
+				DEB597F816CA81250095F465 /* Foundation.framework in Frameworks */,
+				DEB597FA16CA81250095F465 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEB597E916CA81250095F465 = {
+			isa = PBXGroup;
+			children = (
+				DEB597FB16CA81250095F465 /* AnyAuth */,
+				DEB597F416CA81250095F465 /* Frameworks */,
+				DEB597F316CA81250095F465 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEB597F316CA81250095F465 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEB597F216CA81250095F465 /* AnyAuth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEB597F416CA81250095F465 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEB597F516CA81250095F465 /* UIKit.framework */,
+				DEB597F716CA81250095F465 /* Foundation.framework */,
+				DEB597F916CA81250095F465 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEB597FB16CA81250095F465 /* AnyAuth */ = {
+			isa = PBXGroup;
+			children = (
+				DEB5980416CA81250095F465 /* AppDelegate.h */,
+				DEB5980516CA81250095F465 /* AppDelegate.m */,
+				DEB597FC16CA81250095F465 /* Supporting Files */,
+				DEF779D694BECC0976F4377C /* AnyAuthComponent */,
+			);
+			path = AnyAuth;
+			sourceTree = "<group>";
+		};
+		DEB597FC16CA81250095F465 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEB597FD16CA81250095F465 /* AnyAuth-Info.plist */,
+				DEB597FE16CA81250095F465 /* InfoPlist.strings */,
+				DEB5980116CA81250095F465 /* main.m */,
+				DEB5980316CA81250095F465 /* AnyAuth-Prefix.pch */,
+				DEB5980716CA81250095F465 /* Default.png */,
+				DEB5980916CA81250095F465 /* Default@2x.png */,
+				DEB5980B16CA81250095F465 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEF775EFEB2ED12AA3A072F2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DEF77BB1473DCC72A1F10554 /* WebParams.h */,
+				DEF7702258555B42D55F4B5C /* WebParams.m */,
+				DEF77154E2B55B6911340FA7 /* FileUpload.h */,
+				DEF77479B0D87AAB493EEC91 /* FileUpload.m */,
+				DEF77C1D1E5FB16E661A7D31 /* Multipart.h */,
+				DEF77781F9008E9EB33F935D /* Multipart.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DEF779D694BECC0976F4377C /* AnyAuthComponent */ = {
+			isa = PBXGroup;
+			children = (
+				DEF77AAAF83B498A85896161 /* AnyAuthViewController.m */,
+				DEF778FFCA836224E8A753D5 /* AnyAuthViewController.h */,
+				DEF77B536BBCD2ED31192A3F /* Handlers */,
+				DEF775EFEB2ED12AA3A072F2 /* Helpers */,
+				DEF774FDFA3A84F48A041A96 /* AnyAuthControllerProtocol.h */,
+			);
+			path = AnyAuthComponent;
+			sourceTree = "<group>";
+		};
+		DEF77B536BBCD2ED31192A3F /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				DEF77C4B506C141B560A4F04 /* AnyAuthHandlerProtocol.h */,
+				DEF77ED9ADEA54B696B93B24 /* VkontakteAuthHandler.m */,
+				DEF776FA2065D7D99307C314 /* VkontakteAuthHandler.h */,
+				DEF775E852CEE627BE19D7C9 /* FacebookAuthHandler.m */,
+				DEF77E65EECAB69E0AAAF1C5 /* FacebookAuthHandler.h */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEB597F116CA81250095F465 /* AnyAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB5980F16CA81250095F465 /* Build configuration list for PBXNativeTarget "AnyAuth" */;
+			buildPhases = (
+				DEB597EE16CA81250095F465 /* Sources */,
+				DEB597EF16CA81250095F465 /* Frameworks */,
+				DEB597F016CA81250095F465 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnyAuth;
+			productName = AnyAuth;
+			productReference = DEB597F216CA81250095F465 /* AnyAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEB597EA16CA81250095F465 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = ASM;
+			};
+			buildConfigurationList = DEB597ED16CA81250095F465 /* Build configuration list for PBXProject "AnyAuth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DEB597E916CA81250095F465;
+			productRefGroup = DEB597F316CA81250095F465 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEB597F116CA81250095F465 /* AnyAuth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEB597F016CA81250095F465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB5980016CA81250095F465 /* InfoPlist.strings in Resources */,
+				DEB5980816CA81250095F465 /* Default.png in Resources */,
+				DEB5980A16CA81250095F465 /* Default@2x.png in Resources */,
+				DEB5980C16CA81250095F465 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEB597EE16CA81250095F465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB5980216CA81250095F465 /* main.m in Sources */,
+				DEB5980616CA81250095F465 /* AppDelegate.m in Sources */,
+				DEF77015301EEDF394287AED /* AnyAuthViewController.m in Sources */,
+				DEF7794238B0E91F537661A3 /* VkontakteAuthHandler.m in Sources */,
+				DEF77EBBCAD92CDE4E994FDE /* WebParams.m in Sources */,
+				DEF77F3D37CD1FC6A29C9AA9 /* FileUpload.m in Sources */,
+				DEF770C133ACE74977717E66 /* Multipart.m in Sources */,
+				DEF77A5EBBF4B5B5FD90A48F /* FacebookAuthHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DEB597FE16CA81250095F465 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEB597FF16CA81250095F465 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEB5980D16CA81250095F465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEB5980E16CA81250095F465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEB5981016CA81250095F465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnyAuth/AnyAuth-Prefix.pch";
+				INFOPLIST_FILE = "AnyAuth/AnyAuth-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DEB5981116CA81250095F465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AnyAuth/AnyAuth-Prefix.pch";
+				INFOPLIST_FILE = "AnyAuth/AnyAuth-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEB597ED16CA81250095F465 /* Build configuration list for PBXProject "AnyAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB5980D16CA81250095F465 /* Debug */,
+				DEB5980E16CA81250095F465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEB5980F16CA81250095F465 /* Build configuration list for PBXNativeTarget "AnyAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB5981016CA81250095F465 /* Debug */,
+				DEB5981116CA81250095F465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEB597EA16CA81250095F465 /* Project object */;
+}
