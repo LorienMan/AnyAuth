@@ -17,11 +17,9 @@
 		DEB5980A16CA81250095F465 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEB5980916CA81250095F465 /* Default@2x.png */; };
 		DEB5980C16CA81250095F465 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DEB5980B16CA81250095F465 /* Default-568h@2x.png */; };
 		DEF77015301EEDF394287AED /* AnyAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF77AAAF83B498A85896161 /* AnyAuthViewController.m */; };
-		DEF770C133ACE74977717E66 /* Multipart.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF77781F9008E9EB33F935D /* Multipart.m */; };
 		DEF7794238B0E91F537661A3 /* VkontakteAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF77ED9ADEA54B696B93B24 /* VkontakteAuthHandler.m */; };
 		DEF77A5EBBF4B5B5FD90A48F /* FacebookAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF775E852CEE627BE19D7C9 /* FacebookAuthHandler.m */; };
-		DEF77EBBCAD92CDE4E994FDE /* WebParams.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF7702258555B42D55F4B5C /* WebParams.m */; };
-		DEF77F3D37CD1FC6A29C9AA9 /* FileUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF77479B0D87AAB493EEC91 /* FileUpload.m */; };
+		DEF77AE6E6819263279CA0F6 /* NSDictionary+Query.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF77BEB85DF548512596EED /* NSDictionary+Query.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,17 +36,13 @@
 		DEB5980716CA81250095F465 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		DEB5980916CA81250095F465 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		DEB5980B16CA81250095F465 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DEF7702258555B42D55F4B5C /* WebParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebParams.m; sourceTree = "<group>"; };
-		DEF77154E2B55B6911340FA7 /* FileUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUpload.h; sourceTree = "<group>"; };
-		DEF77479B0D87AAB493EEC91 /* FileUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUpload.m; sourceTree = "<group>"; };
 		DEF774FDFA3A84F48A041A96 /* AnyAuthControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnyAuthControllerProtocol.h; sourceTree = "<group>"; };
 		DEF775E852CEE627BE19D7C9 /* FacebookAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookAuthHandler.m; sourceTree = "<group>"; };
 		DEF776FA2065D7D99307C314 /* VkontakteAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VkontakteAuthHandler.h; sourceTree = "<group>"; };
-		DEF77781F9008E9EB33F935D /* Multipart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Multipart.m; sourceTree = "<group>"; };
 		DEF778FFCA836224E8A753D5 /* AnyAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnyAuthViewController.h; sourceTree = "<group>"; };
 		DEF77AAAF83B498A85896161 /* AnyAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyAuthViewController.m; sourceTree = "<group>"; };
-		DEF77BB1473DCC72A1F10554 /* WebParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebParams.h; sourceTree = "<group>"; };
-		DEF77C1D1E5FB16E661A7D31 /* Multipart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Multipart.h; sourceTree = "<group>"; };
+		DEF77AC936D058E2520EE0DA /* NSDictionary+Query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Query.h"; sourceTree = "<group>"; };
+		DEF77BEB85DF548512596EED /* NSDictionary+Query.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Query.m"; sourceTree = "<group>"; };
 		DEF77C4B506C141B560A4F04 /* AnyAuthHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnyAuthHandlerProtocol.h; sourceTree = "<group>"; };
 		DEF77E65EECAB69E0AAAF1C5 /* FacebookAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookAuthHandler.h; sourceTree = "<group>"; };
 		DEF77ED9ADEA54B696B93B24 /* VkontakteAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VkontakteAuthHandler.m; sourceTree = "<group>"; };
@@ -123,12 +117,8 @@
 		DEF775EFEB2ED12AA3A072F2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				DEF77BB1473DCC72A1F10554 /* WebParams.h */,
-				DEF7702258555B42D55F4B5C /* WebParams.m */,
-				DEF77154E2B55B6911340FA7 /* FileUpload.h */,
-				DEF77479B0D87AAB493EEC91 /* FileUpload.m */,
-				DEF77C1D1E5FB16E661A7D31 /* Multipart.h */,
-				DEF77781F9008E9EB33F935D /* Multipart.m */,
+				DEF77BEB85DF548512596EED /* NSDictionary+Query.m */,
+				DEF77AC936D058E2520EE0DA /* NSDictionary+Query.h */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -226,10 +216,8 @@
 				DEB5980616CA81250095F465 /* AppDelegate.m in Sources */,
 				DEF77015301EEDF394287AED /* AnyAuthViewController.m in Sources */,
 				DEF7794238B0E91F537661A3 /* VkontakteAuthHandler.m in Sources */,
-				DEF77EBBCAD92CDE4E994FDE /* WebParams.m in Sources */,
-				DEF77F3D37CD1FC6A29C9AA9 /* FileUpload.m in Sources */,
-				DEF770C133ACE74977717E66 /* Multipart.m in Sources */,
 				DEF77A5EBBF4B5B5FD90A48F /* FacebookAuthHandler.m in Sources */,
+				DEF77AE6E6819263279CA0F6 /* NSDictionary+Query.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

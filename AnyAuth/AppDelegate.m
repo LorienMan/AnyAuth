@@ -22,8 +22,8 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
 
-    VkontakteAuthHandler *handler = [[VkontakteAuthHandler alloc] initWithAppId:@"xxxxxx" scope:@"photos"];
-    //FacebookAuthHandler *handler = [[FacebookAuthHandler alloc] initWithAppId:@"xxxxxxxxxxxx" scope:@"email,read_friendlists"];
+    VkontakteAuthHandler *handler = [[VkontakteAuthHandler alloc] initWithAppId:@"xxxxx" scope:@"photos"];
+    //FacebookAuthHandler *handler = [[FacebookAuthHandler alloc] initWithAppId:@"xxxxxxxxx" scope:@"email,read_friendlists"];
     AnyAuthViewController *controller = [[AnyAuthViewController alloc] initWithHandler:handler];
     controller.delegate = self;
     self.window.rootViewController = controller;

@@ -1,4 +1,4 @@
-#include "AnyAuthControllerProtocol.h"
+#import "AnyAuthControllerProtocol.h"
 
 typedef enum {
     AnyAuthHandlerActionContinue,

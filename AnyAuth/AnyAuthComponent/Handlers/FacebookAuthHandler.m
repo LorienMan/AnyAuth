@@ -1,5 +1,5 @@
 #import "FacebookAuthHandler.h"
-#import "WebParams.h"
+#import "NSDictionary+Query.h"
 
 @implementation FacebookAuthHandler {
     NSURL *startUrl;
@@ -39,11 +39,9 @@
 }
 
 - (AnyAuthHandlerAction)stopAfterVisitingURL:(NSURL *)url {
-    NSLog(@"url = %@", url);
     if ([url.absoluteString hasPrefix:redirectUrlString]) {
         NSString *query = [[url.absoluteString componentsSeparatedByString:@"#"] lastObject];
-        WebParams *webParams = [[WebParams alloc] initWithQuery:query];
-        authData = webParams.params;
+        authData = [NSDictionary dictionaryWithQuery:query];
         isWorking = NO;
         return AnyAuthHandlerActionAuthorized;
     }
