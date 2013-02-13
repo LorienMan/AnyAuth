@@ -33,6 +33,10 @@
         NSURLRequest *request = [NSURLRequest requestWithURL:currentUrl];
         [webView loadRequest:request];
     }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
 
     if (!handler.isWorking && !handler.isAuthorised) {
         [handler startWorking];
