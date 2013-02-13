@@ -10,6 +10,7 @@
 #import "VkontakteAuthHandler.h"
 #import "FacebookAuthHandler.h"
 #import "AnyAuthViewController.h"
+#import "FoursquareAuthHandler.h"
 
 @interface AppDelegate () <AnyAuthViewControllerDelegate>
 @end
@@ -24,6 +25,7 @@
 
     VkontakteAuthHandler *handler = [[VkontakteAuthHandler alloc] initWithAppId:@"xxxxx" scope:@"photos"];
     //FacebookAuthHandler *handler = [[FacebookAuthHandler alloc] initWithAppId:@"xxxxxxxxx" scope:@"email,read_friendlists"];
+    //FoursquareAuthHandler *handler = [[FoursquareAuthHandler alloc] initWithClientId:@"xxxxxxxxxx" redirectURI:@"xxxxxxxxx" languagePrefix:@"ru"];
     AnyAuthViewController *controller = [[AnyAuthViewController alloc] initWithHandler:handler];
     controller.delegate = self;
     self.window.rootViewController = controller;

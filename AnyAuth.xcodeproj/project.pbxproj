@@ -20,6 +20,7 @@
 		DEF7794238B0E91F537661A3 /* VkontakteAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF77ED9ADEA54B696B93B24 /* VkontakteAuthHandler.m */; };
 		DEF77A5EBBF4B5B5FD90A48F /* FacebookAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF775E852CEE627BE19D7C9 /* FacebookAuthHandler.m */; };
 		DEF77AE6E6819263279CA0F6 /* NSDictionary+Query.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF77BEB85DF548512596EED /* NSDictionary+Query.m */; };
+		DEF77EA93BD86CFCFCE9A8D1 /* FoursquareAuthHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF777C15807A94A1E096FA6 /* FoursquareAuthHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		DEF774FDFA3A84F48A041A96 /* AnyAuthControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnyAuthControllerProtocol.h; sourceTree = "<group>"; };
 		DEF775E852CEE627BE19D7C9 /* FacebookAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookAuthHandler.m; sourceTree = "<group>"; };
 		DEF776FA2065D7D99307C314 /* VkontakteAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VkontakteAuthHandler.h; sourceTree = "<group>"; };
+		DEF777C15807A94A1E096FA6 /* FoursquareAuthHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoursquareAuthHandler.m; sourceTree = "<group>"; };
+		DEF77847A0DF1DF5DC9EEDA8 /* FoursquareAuthHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoursquareAuthHandler.h; sourceTree = "<group>"; };
 		DEF778FFCA836224E8A753D5 /* AnyAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnyAuthViewController.h; sourceTree = "<group>"; };
 		DEF77AAAF83B498A85896161 /* AnyAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyAuthViewController.m; sourceTree = "<group>"; };
 		DEF77AC936D058E2520EE0DA /* NSDictionary+Query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Query.h"; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				DEF776FA2065D7D99307C314 /* VkontakteAuthHandler.h */,
 				DEF775E852CEE627BE19D7C9 /* FacebookAuthHandler.m */,
 				DEF77E65EECAB69E0AAAF1C5 /* FacebookAuthHandler.h */,
+				DEF777C15807A94A1E096FA6 /* FoursquareAuthHandler.m */,
+				DEF77847A0DF1DF5DC9EEDA8 /* FoursquareAuthHandler.h */,
 			);
 			path = Handlers;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				DEF7794238B0E91F537661A3 /* VkontakteAuthHandler.m in Sources */,
 				DEF77A5EBBF4B5B5FD90A48F /* FacebookAuthHandler.m in Sources */,
 				DEF77AE6E6819263279CA0F6 /* NSDictionary+Query.m in Sources */,
+				DEF77EA93BD86CFCFCE9A8D1 /* FoursquareAuthHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
