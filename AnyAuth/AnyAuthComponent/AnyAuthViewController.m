@@ -8,6 +8,7 @@
     NSURL *currentUrl;
     UIWebView *webView;
 }
+@synthesize delegate;
 @synthesize handler;
 
 - (id)initWithHandler:(id <AnyAuthHandlerProtocol>)newHandler {
