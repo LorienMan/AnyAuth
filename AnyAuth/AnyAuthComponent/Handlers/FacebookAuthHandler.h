@@ -3,7 +3,8 @@
 
 @interface FacebookAuthHandler : NSObject <AnyAuthHandlerProtocol>
 
-- (id)initWithAppId:(NSString *)appId scope:(NSString *)scope;
+- (id)initWithAppId:(NSString *)appId scope:(NSString *)scope baseDomain:(NSString *)baseDomain;
+- (id)initWithAppId:(NSString *)appId scope:(NSString *)scope appNamespace:(NSString *)appNamespace;
 
 @property (nonatomic, strong, readonly) NSString *accessToken;
 
