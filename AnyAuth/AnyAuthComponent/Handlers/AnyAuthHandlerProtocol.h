@@ -14,7 +14,7 @@ typedef enum {
 
 - (void)startWorking;
 
-- (AnyAuthHandlerAction)stopAfterVisitingURL:(NSURL *)url;
+- (AnyAuthHandlerAction)actionAfterVisitingURL:(NSURL *)url;
 
 @property (nonatomic, weak) id <AnyAuthControllerProtocol> authController;
 

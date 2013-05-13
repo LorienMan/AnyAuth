@@ -46,7 +46,7 @@
     [self.authController startLoadingURL:startUrl];
 }
 
-- (AnyAuthHandlerAction)stopAfterVisitingURL:(NSURL *)url {
+- (AnyAuthHandlerAction)actionAfterVisitingURL:(NSURL *)url {
     if ([url.absoluteString hasPrefix:redirectUrlString]) {
         NSString *query = [[url.absoluteString componentsSeparatedByString:@"#"] lastObject];
         authData = [NSDictionary dictionaryWithQuery:query];

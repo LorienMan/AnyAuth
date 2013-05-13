@@ -48,7 +48,7 @@
 
 - (BOOL)webView:(UIWebView *)_webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     currentUrl = request.URL;
-    AnyAuthHandlerAction action = [handler stopAfterVisitingURL:request.URL];
+    AnyAuthHandlerAction action = [handler actionAfterVisitingURL:request.URL];
 
     switch (action) {
         case AnyAuthHandlerActionContinue:
