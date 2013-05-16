@@ -7,7 +7,7 @@
     NSString *redirectUrlString;
     NSString *cancelString;
 }
-@synthesize authController;
+@synthesize delegate;
 @synthesize isWorking;
 
 - (id)initWithClientId:(NSString *)clientId redirectURI:(NSString *)redirect languagePrefix:(NSString *)lang {
@@ -43,18 +43,18 @@
 
 - (void)startWorking {
     isWorking = YES;
-    [self.authController startLoadingURL:startUrl];
+    [self.delegate authHandler:nil loadURL:startUrl];
 }
 
-- (AnyAuthHandlerAction)actionAfterVisitingURL:(NSURL *)url {
+- (AnyAuthHandlerStatus)statusBeforeVisitingURL:(NSURL *)url {
     if ([url.absoluteString hasPrefix:redirectUrlString]) {
         NSString *query = [[url.absoluteString componentsSeparatedByString:@"#"] lastObject];
         authData = [NSDictionary dictionaryWithQuery:query];
         isWorking = NO;
-        return AnyAuthHandlerActionAuthorized;
+        return AnyAuthHandlerStatusAuthorized;
     }
 
-    return AnyAuthHandlerActionContinue;
+    return AnyAuthHandlerStatusContinue;
 }
 
 @end

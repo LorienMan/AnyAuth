@@ -1,10 +1,12 @@
-#import "AnyAuthControllerProtocol.h"
-
 typedef enum {
-    AnyAuthHandlerActionContinue,
-    AnyAuthHandlerActionAuthorized,
-    AnyAuthHandlerActionCanceled
-} AnyAuthHandlerAction;
+    AnyAuthHandlerStatusContinue,
+    AnyAuthHandlerStatusAuthorized,
+    AnyAuthHandlerStatusCanceled
+} AnyAuthHandlerStatus;
+
+
+@protocol AnyAuthHandlerDelegate;
+
 
 @protocol AnyAuthHandlerProtocol
 
@@ -14,8 +16,17 @@ typedef enum {
 
 - (void)startWorking;
 
-- (AnyAuthHandlerAction)actionAfterVisitingURL:(NSURL *)url;
+- (AnyAuthHandlerStatus)statusBeforeVisitingURL:(NSURL *)url;
 
-@property (nonatomic, weak) id <AnyAuthControllerProtocol> authController;
+@property (nonatomic, weak) id <AnyAuthHandlerDelegate> delegate;
+
+@end
+
+
+@protocol AnyAuthHandlerDelegate
+
+- (void)authHandler:(id)handler didFinishWithStatus:(AnyAuthHandlerStatus)status;
+
+- (void)authHandler:(id)handler loadURL:(NSURL *)url;
 
 @end

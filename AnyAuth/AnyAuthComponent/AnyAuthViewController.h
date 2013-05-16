@@ -1,10 +1,10 @@
 #import <Foundation/Foundation.h>
-#import "AnyAuthControllerProtocol.h"
+#import "AnyAuthHandlerProtocol.h"
 
 @protocol AnyAuthHandlerProtocol;
 @protocol AnyAuthViewControllerDelegate;
 
-@interface AnyAuthViewController : UIViewController <AnyAuthControllerProtocol>
+@interface AnyAuthViewController : UIViewController <AnyAuthHandlerDelegate>
 
 @property (nonatomic, weak) id <AnyAuthViewControllerDelegate> delegate;
 @property (nonatomic, strong) id <AnyAuthHandlerProtocol> handler;
