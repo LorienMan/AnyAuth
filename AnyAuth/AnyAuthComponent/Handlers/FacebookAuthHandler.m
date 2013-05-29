@@ -6,6 +6,7 @@
     NSDictionary *authData;
     NSString *redirectUrlString;
 }
+
 @synthesize delegate;
 @synthesize isWorking;
 
@@ -21,8 +22,10 @@
     if (self = [super init]) {
         redirectUrlString = redirectUrl;
         NSString *urlString = [NSString stringWithFormat:@"https://www.facebook.com/dialog/oauth?client_id=%@&redirect_uri=%@&scope=%@&response_type=token&display=touch",
-                                                         [appId stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], redirectUrlString,
-                                                         [scope stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+                                                        [appId stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+                                                        redirectUrlString,
+                                                        [scope stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+        
         startUrl = [NSURL URLWithString:urlString relativeToURL:nil];
     }
 

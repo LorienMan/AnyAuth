@@ -3,8 +3,8 @@
 
 @interface VkontakteAuthHandler : NSObject <AnyAuthHandlerProtocol>
 
-- (id)initWithAppId:(NSString *)appId scope:(NSString *)scope;
-
 @property (nonatomic, strong, readonly) NSString *accessToken;
+
+- (id)initWithAppId:(NSString *)appId scope:(NSString *)scope;
 
 @end

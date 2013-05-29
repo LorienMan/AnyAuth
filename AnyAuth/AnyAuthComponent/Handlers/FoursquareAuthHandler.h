@@ -3,8 +3,8 @@
 
 @interface FoursquareAuthHandler : NSObject <AnyAuthHandlerProtocol>
 
-- (id)initWithClientId:(NSString *)clientId redirectURI:(NSString *)redirect languagePrefix:(NSString *)lang;
-
 @property (nonatomic, strong, readonly) NSString *accessToken;
+
+- (id)initWithClientId:(NSString *)clientId redirectURI:(NSString *)redirect languagePrefix:(NSString *)lang;
 
 @end

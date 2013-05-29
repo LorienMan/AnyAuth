@@ -7,6 +7,7 @@
     NSString *redirectUrlString;
     NSString *cancelString;
 }
+
 @synthesize delegate;
 @synthesize isWorking;
 
@@ -15,8 +16,9 @@
         redirectUrlString = @"http://api.vk.com/blank.html";
         cancelString = @"cancel=1";
         NSString *urlString = [NSString stringWithFormat:@"http://oauth.vk.com/oauth/authorize?client_id=%@&scope=%@&redirect_uri=%@&display=touch&response_type=token",
-                              [appId stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], [scope stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
-                              redirectUrlString];
+                                                        [appId stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+                                                        [scope stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+                                                        redirectUrlString];
 
         startUrl = [NSURL URLWithString:urlString relativeToURL:nil];
     }

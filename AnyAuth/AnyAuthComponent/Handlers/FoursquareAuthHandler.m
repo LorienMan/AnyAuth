@@ -7,6 +7,7 @@
     NSString *redirectUrlString;
     NSString *cancelString;
 }
+
 @synthesize delegate;
 @synthesize isWorking;
 
@@ -21,7 +22,9 @@
         }
 
         NSString *urlString = [NSString stringWithFormat:@"https://%@foursquare.com/oauth2/authenticate?client_id=%@&response_type=token&redirect_uri=%@",
-                                                         lang, [clientId stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding], redirectUrlString];
+                                                        lang,
+                                                        [clientId stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+                                                        redirectUrlString];
 
         startUrl = [NSURL URLWithString:urlString relativeToURL:nil];
     }
