@@ -31,6 +31,11 @@
     return authData[@"access_token"];
 }
 
+- (NSString *)userId
+{
+    return authData[@"x_mailru_vid"];
+}
+
 - (NSDictionary *)authData {
     return authData;
 }
