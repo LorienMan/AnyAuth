@@ -44,7 +44,7 @@
     }
 }
 
-#pragma mark UIWebViewDelegate
+#pragma mark - UIWebViewDelegate
 
 - (BOOL)webView:(UIWebView *)_webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     currentUrl = request.URL;
@@ -66,7 +66,7 @@
     return NO;
 }
 
-#pragma mark AnyAuthControllerProtocol
+#pragma mark - AnyAuthControllerProtocol
 
 - (void)authHandler:(id)_handler loadURL:(NSURL *)url {
     currentUrl = url;
