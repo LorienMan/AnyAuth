@@ -1,11 +1,14 @@
 #import "VkontakteAuthHandler.h"
 #import "NSDictionary+Query.h"
 
+static NSString *const kCancelString = @"http://api.vk.com/blank.html#error=access_denied";
+static NSString *const kSuccessAuth = @"http://api.vk.com/blank.html#access_token=";
+
+
 @implementation VkontakteAuthHandler {
     NSURL *startUrl;
     NSDictionary *authData;
     NSString *redirectUrlString;
-    NSString *cancelString;
 }
 
 @synthesize delegate;
@@ -14,11 +17,10 @@
 - (id)initWithAppId:(NSString *)appId scope:(NSString *)scope {
     if (self = [super init]) {
         redirectUrlString = @"http://api.vk.com/blank.html";
-        cancelString = @"cancel=1";
         NSString *urlString = [NSString stringWithFormat:@"http://oauth.vk.com/oauth/authorize?client_id=%@&scope=%@&redirect_uri=%@&display=touch&response_type=token",
-                                                        [appId stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
-                                                        [scope stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
-                                                        redirectUrlString];
+                                                         [appId stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+                                                         [scope stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding],
+                                                         redirectUrlString];
 
         startUrl = [NSURL URLWithString:urlString relativeToURL:nil];
     }
@@ -44,14 +46,16 @@
 }
 
 - (AnyAuthHandlerStatus)statusBeforeVisitingURL:(NSURL *)url {
-    if ([url.absoluteString hasPrefix:redirectUrlString]) {
+    if ([url.absoluteString hasPrefix:kCancelString]) {
+        isWorking = NO;
+        return AnyAuthHandlerStatusCanceled;
+    }
+
+    else if ([url.absoluteString hasPrefix:kSuccessAuth]) {
         NSString *query = [[url.absoluteString componentsSeparatedByString:@"#"] lastObject];
         authData = [NSDictionary dictionaryWithQuery:query];
         isWorking = NO;
         return AnyAuthHandlerStatusAuthorized;
-    } else if ([url.absoluteString hasSuffix:cancelString]) {
-        isWorking = NO;
-        return AnyAuthHandlerStatusCanceled;
     }
 
     return AnyAuthHandlerStatusContinue;
