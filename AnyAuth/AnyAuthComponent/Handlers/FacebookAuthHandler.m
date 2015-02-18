@@ -54,7 +54,7 @@
         NSString *query = [[url.absoluteString componentsSeparatedByString:@"#"] lastObject];
         authData = [NSDictionary dictionaryWithQuery:query];
         isWorking = NO;
-        return AnyAuthHandlerStatusAuthorized;
+        return [self accessToken] ? AnyAuthHandlerStatusAuthorized : AnyAuthHandlerStatusCanceled;
     }
 
     return AnyAuthHandlerStatusContinue;
